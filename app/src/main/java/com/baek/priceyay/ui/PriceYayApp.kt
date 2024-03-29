@@ -34,6 +34,11 @@ fun PriceYayApp(navController: NavHostController = rememberNavController()) {
     }
 }
 
+/**
+ * 바텀 앱바
+ *
+ * @param navController 네비게이션 작업을 수행할 컨트롤러
+ */
 @Composable
 fun PriceYayBottomAppBar(
     navController: NavHostController
@@ -59,7 +64,7 @@ fun PriceYayBottomAppBar(
                     modifier = Modifier.weight(1f),
                     icon = item.icon,
                     selected = currentRoute == item.route,
-                    label = item.route
+                    description = item.route
                 ) {
                     navController.navigate(item.route)
                 }
@@ -68,19 +73,20 @@ fun PriceYayBottomAppBar(
     }
 }
 
-/*
-icon image
-label text
-언제 selected 상태가 될 지
-선택됐을 때 icon 색상
-선택되지 않았을때 icon 색상
-click되면 어떤 행동을 취할지
-*/
+/**
+ * 바텀 네비게이션 아이템
+ * @param icon 네비게이션 아이콘 벡터이미지
+ * @param description 네비게이션 아이콘 설명
+ * @param selected 네비게이션 아이콘 상태
+ * @param selectedContentColor 아이콘 선택 됐을때 색상
+ * @param unselectedContentColor 아이콘 선택 되지 않았을 때 색상
+ * @param onClick 아이콘 선택시 해야할 작업
+ */
 @Composable
 fun BottomNavigationItem(
     modifier: Modifier = Modifier,
     icon: ImageVector,
-    label: String,
+    description: String,
     selected: Boolean,
     selectedContentColor: Color = MaterialTheme.colorScheme.primary,
     unselectedContentColor: Color = Color.Gray,
@@ -91,7 +97,7 @@ fun BottomNavigationItem(
     ) {
         Icon(
             imageVector = icon,
-            contentDescription = label,
+            contentDescription = description,
             tint = if (selected) selectedContentColor else unselectedContentColor
         )
     }

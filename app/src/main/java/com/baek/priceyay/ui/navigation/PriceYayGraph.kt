@@ -8,6 +8,9 @@ import com.baek.priceyay.ui.bookmark.BookmarkScreen
 import com.baek.priceyay.ui.home.HomeScreen
 import com.baek.priceyay.ui.search.SearchScreen
 
+/**
+ * 네비게이션 그래프
+ */
 @Composable
 fun PriceYayGraph(
     navController: NavHostController
@@ -17,9 +20,7 @@ fun PriceYayGraph(
         startDestination = PriceYayDestination.HomeDestination.route
     ) {
         composable(PriceYayDestination.HomeDestination.route) {
-            HomeScreen(
-
-            )
+            HomeScreen()
         }
         composable(PriceYayDestination.SearchDestination.route) {
             SearchScreen()
