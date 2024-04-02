@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">priceyay</string>
 
-    <string name="home">Home</string>
-    <string name="search">Search</string>
-    <string name="bookmark">Bookmark</string>
+    <string name="home">Home\n홈</string>
+    <string name="search">Search\n검색</string>
+    <string name="bookmark">Bookmark\n북마크</string>
 </resources>

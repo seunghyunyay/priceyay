@@ -6,7 +6,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.baek.priceyay.HOME
+import androidx.compose.ui.res.stringResource
+import com.baek.priceyay.R
 
 @Composable
 fun HomeScreen(
@@ -14,7 +15,7 @@ fun HomeScreen(
 ) {
     Box(modifier = modifier.fillMaxSize()) {
         Text(
-            HOME,
+            stringResource(id = R.string.home),
             modifier = Modifier.align(Alignment.Center)
         )
     }

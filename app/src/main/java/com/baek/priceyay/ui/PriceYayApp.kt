@@ -53,7 +53,7 @@ fun PriceYayBottomAppBar(
     )
 
     BottomAppBar(
-        modifier = Modifier.height(60.dp)
+        modifier = Modifier.height(100.dp)
     ) {
         Row(
             modifier = Modifier.fillMaxSize(),
