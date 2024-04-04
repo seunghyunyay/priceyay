@@ -1,7 +1,7 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: "[NEW]"
+title: "[New] "
 labels: enhancement
 assignees: seunghyunyay
 
@@ -11,8 +11,8 @@ assignees: seunghyunyay
 
 
 ## 할 일
-[]
-[]
-[]
+- [ ]
+- [ ]
+- [ ]
 
 ## 일정
